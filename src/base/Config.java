@@ -21,6 +21,7 @@ public class Config extends WDFunction {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.get(url);
+		System.out.println("new changes");
 
 }
 	@AfterMethod
