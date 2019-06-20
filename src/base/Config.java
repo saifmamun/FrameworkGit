@@ -22,7 +22,8 @@ public class Config extends WDFunction {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.get(url);
 		System.out.println("new changes");
-
+		System.out.println("new changes a"); 
+		System.out.println("new changes B");
 }
 	@AfterMethod
 
