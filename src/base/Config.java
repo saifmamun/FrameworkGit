@@ -24,11 +24,14 @@ public class Config extends WDFunction {
 		System.out.println("new changes");
 		System.out.println("new changes a"); 
 		System.out.println("new changes B");
+		System.out.println("new changes in develop");
+		System.out.println("new changes in develop branch");
 }
 	@AfterMethod
 
 public void afterTest (){
 Application_Logs.info("close the browser");
+System.out.println("new changes develop");
 		
 
 //driver.close();
