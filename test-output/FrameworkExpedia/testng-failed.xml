@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FrameworkExpedia]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.expedia.com/Flights"/>
+  <test name=".....expedia sign up.........">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.expedia.com/Flights"/>
+    <classes>
+      <class name="testCase.TestCase"/>
+    </classes>
+  </test> <!-- .....expedia sign up......... -->
+  <test name=".....expedia sign up.........(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.expedia.com/Flights"/>
+    <classes>
+      <class name="testCase.TestCase">
+        <methods>
+          <include name="browserInitialize"/>
+          <include name="afterTest"/>
+          <include name="signUp"/>
+        </methods>
+      </class> <!-- testCase.TestCase -->
+    </classes>
+  </test> <!-- .....expedia sign up.........(failed) -->
+</suite> <!-- Failed suite [FrameworkExpedia] -->
