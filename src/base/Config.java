@@ -32,6 +32,7 @@ public class Config extends WDFunction {
 public void afterTest (){
 Application_Logs.info("close the browser");
 System.out.println("new changes develop");
+System.out.println("new changes in testing");
 		
 
 //driver.close();
